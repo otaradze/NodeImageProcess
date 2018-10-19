@@ -12,13 +12,8 @@ router.get('/', function(req, res, next) {
 router.post('/merge', (req, res) => {
 	const image = new Image();
 	image.src = req.body.image;
-	console.info('Image Size:', image.clientWidth);
+	console.info('Image Size:', image.width);
 	res.send('OK');
 })
-
-
-
-
-
 
 module.exports = router;
