@@ -22,7 +22,7 @@ router.post('/merge', (req, res) => {
  	ctx.drawImage(image, 0, 0);
 
 	ctx.fillText(str, x, y);
-	const imgStr = canvas.toDataURL("image/jpeg");
+	const imgStr = canvas.toDataURL("image/png");
 	
 	res.send({
 		result_image: imgStr
